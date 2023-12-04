@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title></title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="home.css" rel="stylesheet">
-	</head>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet">
+</head>
 
-	<body>
-		<nav class="nav">
-            <a href="index.html"><img src="./img/logo.png" alt="cartoon of a man holding pizza next to text saying Cocco's Pizza"></a>
-            <ul>
-                <li> <a href ="index.html"> Home </a></li>
-                <li> <a href="menu.html"> Menu </a></li>
-                <li> <a href = "contact.html"> Contact Us </a></li>
-                <li> <a href = 'about.html'> About Us </a></li>
-            </ul>
+<body>
+    <nav class="nav">
+        <div id="image">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="cartoon of a man holding pizza next to text saying Cocco's Pizza">
+            </a>
+        </div>
 
-            <img src="./img/cart-outline.png" alt="cartoon of a shopping cart" id = "cart">
-        </nav>
-	</body>
+        <ul>
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="menu.html"> Menu </a></li>
+            <li> <a href="contact.html"> Contact Us </a></li>
+            <li> <a href='about.html'> About Us </a></li>
+        </ul>
+
+        <img src="./img/cart-outline.png" alt="cartoon of a shopping cart" id="cart">
+    </nav>
+
+    <main id="contactMain">
+        <form>
+            <label for="FName">*First Name:</label>
+            <input type="text" id="FName" name="FName" required="required">
+
+            <label for="LName">*Last Name:</label>
+            <input type="text" id="LName" name="LName" required="required">
+
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" size="40" required="required">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" maxlength="14">
+
+            <label for="message">*Message:</label>
+            <textarea id="message" rows="2" cols="30" required="required"></textarea>
+
+            <input type="submit" value="submit" id="submit">
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li> Nutrition </li>
+            <li> Allergens </li>
+            <li> About Us </li>
+            <li> Customer Service </li>
+            <li> Catering </li>
+        </ul>
+    </footer>
+</body>
 </html>
