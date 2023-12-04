@@ -91,6 +91,41 @@ input, textarea {
     margin-left: 160px;
 }
 
+#contactMain {
+    display: flex;
+}
+
+#contactImage {
+    position: relative;
+    margin-left: auto;
+    margin-right: 50px;
+    width: 40%;
+}
+
+/* TABLE ---------------------------- */
+
+table {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+}
+
+    table th {
+        background-color: rgb(215, 94, 94);
+        border: 3px solid rgb(127, 23, 23);
+        width: 200px;
+        padding: 10px;
+    }
+
+    table td {
+        padding-left: 10px;
+        border: 3px solid rgb(127, 23, 23);
+    }
+
+    table th img {
+        width: 100%;
+    }
+
 
 /* FOOTER ---------------------------- */
 
@@ -117,6 +152,10 @@ footer {
         color: white;
         cursor: pointer;
     }
+
+#menuFooter {
+    position: relative;
+}
 
 /* MEDIA ---------------------------- */
 @media only screen and (max-width: 56em) {
