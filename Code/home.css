@@ -3,10 +3,6 @@
     margin: auto;
 }
 
-.dropdown {
-    display: none;
-}
-
 /* NAV ---------------------------- */
 .nav {
     display: flex;
@@ -48,7 +44,7 @@
 
 /* MAIN ---------------------------- */
 
-#indexMain {
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
@@ -57,75 +53,35 @@
 
 #SpecialtyDeal {
     grid-area: 1 / 1 / 3 / 2;
-    padding: 20%;
 }
+
+    #SpecialtyDeal img {
+        width: 80%;
+        height: auto;
+    }
 
 #OrderNow {
     grid-area: 1 / 2 / 2 / 3;
-    padding: 10%;
+    padding: 10px;
+    border: solid;
+    background-color: #d62727;
+    border-radius: 75px;
+    height: 100%;
+    width: 40%;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #CoolDeal {
     grid-area: 2 / 2 / 3 / 3;
     padding: 10%;
-}
-
-form {
-    padding: 20px;
-}
-
-label {
-    float: left;
     display: block;
-    text-align: right;
-    width: 125px;
-    padding-right: 2em;
 }
 
-input, textarea {
-    display: block;
-    margin-bottom: 20px;
-}
-
-#submit {
-    margin-left: 160px;
-}
-
-#contactMain {
-    display: flex;
-}
-
-#contactImage {
-    position: relative;
-    margin-left: auto;
-    margin-right: 50px;
-    width: 40%;
-}
-
-/* TABLE ---------------------------- */
-
-table {
-    display: flex;
-    justify-content: center;
-    border-collapse: collapse;
-}
-
-    table th {
-        background-color: rgb(215, 94, 94);
-        border: 3px solid rgb(127, 23, 23);
-        width: 200px;
-        padding: 10px;
+    #CoolDeal img {
+        width: 65%;
     }
-
-    table td {
-        padding-left: 10px;
-        border: 3px solid rgb(127, 23, 23);
-    }
-
-    table th img {
-        width: 100%;
-    }
-
 
 /* FOOTER ---------------------------- */
 
@@ -152,10 +108,6 @@ footer {
         color: white;
         cursor: pointer;
     }
-
-#menuFooter {
-    position: relative;
-}
 
 /* MEDIA ---------------------------- */
 @media only screen and (max-width: 56em) {
@@ -234,8 +186,20 @@ footer {
         padding: 0;
         padding-top: 20px
     }
-
-    #email {
-        width: 156px;
-    }
 }
+
+
+/* ABOUT */
+.about {
+    display: flex;
+    text-align: left;
+    margin-left: 150px;
+    padding-top: 165px;
+    margin-right: 175px;
+}
+
+    .about img {
+        width: 300px;
+        height: 300px;
+        float: right;
+    }
