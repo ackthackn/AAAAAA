@@ -44,7 +44,7 @@
 
 /* MAIN ---------------------------- */
 
-main {
+#indexMain {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
@@ -82,6 +82,48 @@ main {
     #CoolDeal img {
         width: 65%;
     }
+    
+    form { padding: 20px; }
+    label 
+    { 
+        float: left; 
+        display: block; 
+        text-align: right; 
+        width: 125px; 
+        padding-right: 2em;
+    }
+    input, textarea 
+    { 
+        display: block; 
+        margin-bottom: 20px;
+    }
+    #submit {margin-left: 160px;}
+    
+    #contactMain {display: flex;}
+    #contactImage {position: relative; margin-left: auto; margin-right: 50px; width: 40%;}
+    
+
+/* TABLE ---------------------------- */
+
+table 
+{
+    display: flex; 
+    justify-content: center; 
+    border-collapse: collapse;
+}
+table th 
+{
+    background-color: rgb(215, 94, 94); 
+    border: 3px solid rgb(127, 23, 23);
+    width: 200px;
+    padding: 10px;
+}
+table td 
+{
+    padding-left: 10px; 
+    border: 3px solid rgb(127, 23, 23);
+}
+table th img {width: 100%;}
 
 /* FOOTER ---------------------------- */
 
@@ -108,6 +150,8 @@ footer {
         color: white;
         cursor: pointer;
     }
+
+    #menuFooter {position: relative;}
 
 /* MEDIA ---------------------------- */
 @media only screen and (max-width: 56em) {
@@ -186,6 +230,7 @@ footer {
         padding: 0;
         padding-top: 20px
     }
+    #email {width: 156px;}
 }
 
 
